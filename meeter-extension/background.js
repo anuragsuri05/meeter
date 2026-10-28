@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(e=>{chrome.sidePanel.setPanelBehavior({openPanelOnActionClick:!0}).catch(()=>{}),e.reason===chrome.runtime.OnInstalledReason.INSTALL&&chrome.tabs.create({url:chrome.runtime.getURL("onboarding.html")})});chrome.runtime.onStartup.addListener(()=>{chrome.sidePanel.setPanelBehavior({openPanelOnActionClick:!0}).catch(()=>{})});
